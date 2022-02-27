@@ -1,8 +1,6 @@
 <template>
-  <div class="level is-mobile mt-6 px-5">
-    <div class="level-left">
-      <h1 class="level-item is-size-3 has-text-weight-medium">devfinder</h1>
-    </div>
+  <div class="level is-mobile mt-6 px-5 text-color">
+    <the-logo></the-logo>
     <dark-mode></dark-mode>
   </div>
 </template>
@@ -10,6 +8,7 @@
 <script>
 export default {
   components: {
+    TheLogo: () => import("../logo/TheLogo.vue"),
     DarkMode: () => import("../dark-mode/DarkMode.vue"),
   },
 };

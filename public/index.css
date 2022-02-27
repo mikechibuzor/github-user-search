@@ -1,0 +1,24 @@
+html{
+  transition: all .3s ease-in;
+}
+html.dark.primary-color{
+  background: #0D1117;
+  color: white;
+}
+.primary-color{
+  background: #c9d1d9;
+}
+html.dark .text-color{
+  color: #8B949E;
+}
+
+/* html.dark h1 {
+  color: white;
+}
+body {
+  background: white;
+}
+
+html.dark .level{
+  background: #0D1117;
+} */
