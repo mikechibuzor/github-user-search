@@ -16,7 +16,9 @@
         </p>
       </div>
     </div>
-    <button type="submit" class="is-info button is-absolute">Search</button>
+    <button ref="button" type="submit" class="is-info button is-absolute">
+      Search
+    </button>
   </form>
 </template>
 
@@ -44,14 +46,17 @@ export default {
         if (!this.validateSearchInput()) {
           return false;
         }
+        this.$refs.button.classList.add("is-loading");
         const response = await searchUser(this.search);
         const { data, status } = response;
         if (data && status === 200) {
+          this.$refs.button.classList.remove("is-loading");
           // ()=> proceeds to save in store
           this.$store.commit("SET_GITHUB_USER", data);
           console.log(this.$store.state.githubUser);
         }
       } catch (err) {
+        this.$refs.button.classList.remove("is-loading");
         console.log(err);
       }
     },

@@ -3,10 +3,11 @@ input {
   transition: all 0.3s ease-in;
 }
 html.dark.primary-color {
-  background: #1a374d;
+  background: #050a30;
   color: white;
 }
-.primary-color {
+.primary-color,
+#bio-inner {
   background: #c9d1d9;
 }
 html.dark .text-color {
@@ -19,14 +20,21 @@ input {
 input::placeholder {
   font-size: 1.1rem;
 }
-html.dark input {
-  background: #1a374d;
+html.dark input,
+html.dark #main-body {
+  background: #003060;
+  color: #c9d1d9;
 }
 html.dark input::placeholder {
-  color: #8b949e;
+  color: #c9d1d9;
 }
 body {
   font-family: "Fredoka", sans-serif;
+}
+
+html.dark #bio-inner {
+  background: #050a30;
+  color: #c9d1d9;
 }
 
 @media screen and (max-width: 768px) {
