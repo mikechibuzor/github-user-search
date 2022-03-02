@@ -1,24 +1,36 @@
-html{
-  transition: all .3s ease-in;
+html,
+input {
+  transition: all 0.3s ease-in;
 }
-html.dark.primary-color{
-  background: #0D1117;
+html.dark.primary-color {
+  background: #1a374d;
   color: white;
 }
-.primary-color{
+.primary-color {
   background: #c9d1d9;
 }
-html.dark .text-color{
-  color: #8B949E;
+html.dark .text-color {
+  color: #8b949e;
 }
-
-/* html.dark h1 {
-  color: white;
+input {
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  font-size: 1.1rem;
+}
+html.dark input {
+  background: #1a374d;
+}
+html.dark input::placeholder {
+  color: #8b949e;
 }
 body {
-  background: white;
+  font-family: "Fredoka", sans-serif;
 }
 
-html.dark .level{
-  background: #0D1117;
-} */
+@media screen and (max-width: 768px) {
+  #bio {
+    margin-top: 1rem !important;
+  }
+}

@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  name: "TheHeader",
   components: {
     TheLogo: () => import("../logo/TheLogo.vue"),
     DarkMode: () => import("../dark-mode/DarkMode.vue"),
