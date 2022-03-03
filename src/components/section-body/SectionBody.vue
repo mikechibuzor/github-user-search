@@ -36,7 +36,7 @@
             <div class="columns is-mobile">
               <div class="column">
                 <p>Repos</p>
-                <h3 class="is-size-3 mt-1-mobile">{{ repos }}</h3>
+                <h3 class="is-size-3 mt-1-mobile p0">{{ repos }}</h3>
               </div>
               <div class="column">
                 <p>Followers</p>
