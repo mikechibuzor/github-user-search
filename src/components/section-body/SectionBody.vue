@@ -40,7 +40,7 @@
               </div>
               <div class="column">
                 <p>Followers</p>
-                <h3 class="is-size-3 mt-1-mobile">{{ followers }}</h3>
+                <h3 class="is-size-3 mt-1-mobile sld">{{ followers }}</h3>
               </div>
               <div class="column">
                 <p>Following</p>
